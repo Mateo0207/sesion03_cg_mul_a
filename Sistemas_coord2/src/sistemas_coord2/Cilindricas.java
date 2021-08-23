@@ -29,14 +29,14 @@ public class Cilindricas {
     
     public Cilindricas esferica_cilindrica(Esferica a){
     
-        return esferica_cilindrica()
+        return esferica_cilindrica(a.getradio(),a.getang(),a.getAzi());
     }
 
     public Cilindricas(float radio, float punto, float azi, Cilindricas esferica) {
         this.radio = radio;
         this.punto = punto;
         this.azi = azi;
-        this.esferica = esferica;
+        
     }
 
     public float getX() {
